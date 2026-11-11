@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Muhammed Anas - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Muhammed Anas 
+          <div class="contact_info">
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/circled-envelope.png" alt="circled-envelope"/>
+          abdmuham@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/call-female.png" alt="call-me"/>
+          +923045634581
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="./icons8-businessman.gif" class="profile_image"/>
+      </div>
+      <div>
+          <h1>
+            Hi, I'm Muhammed Anas <img src="./icons8-high-five.gif" width="60px"/>
+          </h1>
+          <p>
+            I am a student of high school at Army Puplic school petaro.I am learning web development using HTML,CSS and 
+            JavaScript.I have learned python.And halve of C#.I am a fast learner.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img width="64" height="64" src="https://img.icons8.com/arcade/64/html-5.png" alt="html-5"/>
+          <h6>HTML</h6>
+          <p>2 Months experience</p>
+        </div>  
+
+        <div class="skill">
+          <img width="64" height="64" src="https://img.icons8.com/arcade/64/javascript.png" alt="javascript"/>
+          <h6>JavaScript</h6>
+          <p>1 Months experience</p>
+        </div>
+        <div class="skill">
+          <img width="64" height="64" src="https://img.icons8.com/stickers/100/css.png" alt="css"/>
+          <h6>CSS</h6>
+          <p>1 Months experience</p>
+        </div>
+        <div class="skill">
+          <img width="48" height="48" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
+          <h6>Python</h6>
+          <p>6 Months experience</p>
+        </div>
+        <div class="skill">
+          <img width="64" height="64" src="https://img.icons8.com/arcade/64/c.png" alt="c"/>
+          <h6>C</h6>
+          <p>learning</p>
+        </div>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Intrest calculatar</h3>
+            <ul>
+              <li>Developed a calculatar which calculate Intrest using HTML, CSS and JavaScript </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Grade checker</h3>
+            <ul>
+              <li>Developed and deployed a project which check if the student is Fail or Pass.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Capital city guessing webgame</h3>
+            <ul>
+              <li>I created an webgame in which we guess the Capital city of given countries</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Muhammad is a very quick learner and quickly grasps key concepts of web development. He has a great
+          attitude and is an excellent team player. He has a curious mind and asks the right questions. 
+          He takes initiative within a team and has the potential to lead the team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+         Working with Muhammad has been a great experience. He is knowledgeable, dedicated, and always goes 
+         the extra mile to deliver quality work. I truly enjoyed collaborating with him and would be 
+         delighted to work with him again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Muhammad is a talented and dedicated professional who consistently brings fresh ideas and a strong
+           work ethic to every project. His ability to understand challenges, find effective solutions, and 
+           work collaboratively makes him stand out. Any team would be fortunate to have him on board, and 
+           I highly recommend working with him. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <a class="topmenu" href="#home"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/home.png" alt="home"/></a>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img width="48" height="48" src="https://img.icons8.com/material-outlined/48/checked--v1.png" alt="checked--v1"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
